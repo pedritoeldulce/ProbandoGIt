@@ -41,5 +41,7 @@ Al iniciar se creará una carpeta `.git`
 
 ## Clase 2
 
+solo aplica a los archivos modificados en un solo paso van a apasar al area de preparacion y luego al repositio Git en un solo paso
 
-
+    git commit -am "Actualiza la documentacion y limpieza estilos"; -am: archivos modificados
+Diferencia archivos nuevos de archivo modificados.
