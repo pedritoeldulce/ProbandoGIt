@@ -32,7 +32,7 @@ Al iniciar se creará una carpeta `.git`
 - Área de preparación: Punto intermedio donde se preparan los archivos para luego pasar al repositorio, un comando que nos ayuda para identifiar el repositorio es `git status`
 - Repositorio: 
 
-`git add` mueve los archivos del espacio de trabajo al área de preparación. Podemos agregar archivos por archivos (indicando el nombre) o todos los  archivos a la vez con el punto `.`
+`git add` mueve los archivos del espacio de trabajo al área de preparación. Podemos agregar archivos por archivos (indicando el nombre) o todos los  archivos a la vez con el punto `.`, el punto indica que se agreguen todos los archivos de la carpeta donde estoy, más no todo el proyecto.
 
 `git commit` Almacena los archivos en le repositorio, la Sintaxis `git commit -m "mensaje"`
 
