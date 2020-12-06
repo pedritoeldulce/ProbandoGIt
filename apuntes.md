@@ -43,5 +43,10 @@ Al iniciar se creará una carpeta `.git`
 
 solo aplica a los archivos modificados en un solo paso van a apasar al area de preparacion y luego al repositio Git en un solo paso
 
-    git commit -am "Actualiza la documentacion y limpieza estilos"; -am: archivos modificados
+    git commit -am "Actualiza la documentacion y limpieza estilos"
+
+`git commit -am` "": archivos modificados, se usa para guardar solo archivos modificados
+
+`git add archivo/.` : para guardar archivos nuevos
+
 Diferencia archivos nuevos de archivo modificados.
