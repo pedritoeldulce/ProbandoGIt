@@ -37,7 +37,9 @@ Al iniciar se creará una carpeta `.git`
 `git commit` Almacena los archivos en le repositorio, la Sintaxis `git commit -m "mensaje"`
 
 `git log` Muestra todo los commit
-
+`git log --oneline` muestra un resumen de la bitacora
 
 ## Clase 2
+
+
 
