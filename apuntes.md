@@ -35,3 +35,9 @@ Al iniciar se creará una carpeta `.git`
 `git add` mueve los archivos del espacio de trabajo al área de preparación. Podemos agregar archivos por archivos (indicando el nombre) o todos los  archivos a la vez con el punto `.`
 
 `git commit` Almacena los archivos en le repositorio, la Sintaxis `git commit -m "mensaje"`
+
+`git log` Muestra todo los commit
+
+
+## Clase 2
+
