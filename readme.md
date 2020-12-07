@@ -8,3 +8,8 @@ Requerimientos funcionales:
 
 Requerimientos no Funcionales:
 - Usabilidad
+- Reusabilidad
+asda 
+
+sad asd as
+

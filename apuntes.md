@@ -41,7 +41,9 @@ Al iniciar se creará una carpeta `.git`
 
 ## Clase 2
 
-solo aplica a los archivos modificados en un solo paso van a apasar al area de preparacion y luego al repositio Git en un solo paso
+Diferencia archivos nuevos de archivo modificados.
+
+Solo aplica a los archivos modificados en un solo paso van a apasar al area de preparacion y luego al repositio Git en un solo paso
 
     git commit -am "Actualiza la documentacion y limpieza estilos"
 
@@ -49,4 +51,20 @@ solo aplica a los archivos modificados en un solo paso van a apasar al area de p
 
 `git add archivo/.` : para guardar archivos nuevos
 
-Diferencia archivos nuevos de archivo modificados.
+
+### Deshacer cambios realizados despues de un commit
+- Se utiliza el siguiente comando
+
+    git checkout <nombre del archivo>, se borra todos los cambios del arrchivo
+    
+    git checkout -f: forzamos que todos los cambios se resetean
+
+### Quitando archivos del area de preparacion
+
+    git restored --staged
+
+Reestablece el archivo a su contenido anterior, perdiendo los cambios realizados
+
+    git reset
+
+quita de la zona de preparacion para el proximo commit
