@@ -107,5 +107,19 @@ Pasamos del actual (7b645a3) al commit con el hash 52282cc "Se agrega la página
 
 Para retroceder en el tiempo o regresar al primer commit, utilizamos el comando
 
-    git checkout  master
+    git checkout master
+
+
+Comandos adicionales, Opciones de visualización del historial
+
+    git log --raw
+
+`git log --raw`: Muestra los archivos que se modificaron, agregaron entre commits
+
+`git log --oneline -<number>`: indica el numero de commit que desee visualizar
+
+
+NOTA: Podemos darle formato a los mensajes que da Git.
+
+    git log --pretty=format:"El autor del commit %h fue %an"
 
