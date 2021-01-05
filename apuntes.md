@@ -123,3 +123,71 @@ NOTA: Podemos darle formato a los mensajes que da Git.
 
     git log --pretty=format:"El autor del commit %h fue %an"
 
+
+### Comandos LS
+
+El comando `ls` es muy útil para ver los archivos y directorios que tenemos dentro del directorio en el que estamos.
+
+Las opciones disponibles con este comando son las siguientes:
+
+`ls -a`: Nos muestra los archivos y directorios dentro del directorio actual, incluyendo los archivos y directorios ocultos.
+
+        PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (main)
+        $ ls -a
+        ./  ../  .git/  apuntes.md  images/  index.html  pages/  readme.md  styles/
+
+
+`ls -l`: Muestra toda la información : usuario, grupo, permisos, tamaño, fecha y hora de creación.
+
+        PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (main)
+        $ ls -l
+        total 10
+        -rw-r--r-- 1 PEDRITO 197121 4948 Jan  5 03:01 apuntes.md
+        drwxr-xr-x 1 PEDRITO 197121    0 Jan  5 00:23 images/
+        -rw-r--r-- 1 PEDRITO 197121  546 Jan  5 00:23 index.html
+        drwxr-xr-x 1 PEDRITO 197121    0 Jan  5 00:23 pages/
+        -rw-r--r-- 1 PEDRITO 197121  254 Jan  5 00:23 readme.md
+        drwxr-xr-x 1 PEDRITO 197121    0 Jan  5 00:23 styles/
+
+
+`ls -lh`: Muestra la mismo informacion que *ls -l* pero con las unidades de tamaño en KB, MB, etc.
+
+        PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (main)
+        $ ls -lh
+        total 10K
+        -rw-r--r-- 1 PEDRITO 197121 5.5K Jan  5 03:03 apuntes.md
+        drwxr-xr-x 1 PEDRITO 197121    0 Jan  5 00:23 images/
+        -rw-r--r-- 1 PEDRITO 197121  546 Jan  5 00:23 index.html
+        drwxr-xr-x 1 PEDRITO 197121    0 Jan  5 00:23 pages/
+        -rw-r--r-- 1 PEDRITO 197121  254 Jan  5 00:23 readme.md
+        drwxr-xr-x 1 PEDRITO 197121    0 Jan  5 00:23 styles/
+
+
+## RAMAS
+
+Comando para craer otra rama:
+
+    git checkout -b development
+
+
+Ejemplo en el Git bush
+
+    PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (main)
+    $ git checkout -b development
+    Switched to a new branch 'development'
+
+    PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (development)
+
+
+Comando que permite conocer cuantas ramas tenemos en el Git:
+
+    git branch
+
+
+ejemplo:
+
+    
+    PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (development)
+    $ git branch
+    * development
+    main
