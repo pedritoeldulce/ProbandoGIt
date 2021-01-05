@@ -234,3 +234,15 @@ El comando --graph muestra los commit de las ramas; los `*` representan los comm
     * 6af561f agregué una imagen y lo llamé desde el index.html
     * 8b3fe36 Agregamos los requisitos del proyecto
     * 92cf08b mi Primer commit, inicia el proyecto
+
+
+Nota:  A partir de la version 2.23 de GIT, hay 2 opciones de cambiar de rama
+1) `git checkout main`
+2) `git switch main`
+
+    PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (development)
+    $ git checkout main
+    Switched to branch 'main'
+    Your branch is up to date with 'origin/main'.
+
+    PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (main)
