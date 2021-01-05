@@ -283,4 +283,8 @@ NOTA:
 *  Si los archivos que se modifican no son los mismos en ambas ramas, el `merge` se hace muy simple
 * Si se llegan a modificar el mismo archivo en ambas ramas, habrá conflictos y hay que ayudar la propio git
 
-estos es lo que nuevo que agregue en la rama dev
+NOTa 2:
+
+* Para Elimimnar una rama:
+
+    git branch -D <rama>
