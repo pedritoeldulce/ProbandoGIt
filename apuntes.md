@@ -123,3 +123,126 @@ NOTA: Podemos darle formato a los mensajes que da Git.
 
     git log --pretty=format:"El autor del commit %h fue %an"
 
+
+### Comandos LS
+
+El comando `ls` es muy útil para ver los archivos y directorios que tenemos dentro del directorio en el que estamos.
+
+Las opciones disponibles con este comando son las siguientes:
+
+`ls -a`: Nos muestra los archivos y directorios dentro del directorio actual, incluyendo los archivos y directorios ocultos.
+
+        PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (main)
+        $ ls -a
+        ./  ../  .git/  apuntes.md  images/  index.html  pages/  readme.md  styles/
+
+
+`ls -l`: Muestra toda la información : usuario, grupo, permisos, tamaño, fecha y hora de creación.
+
+        PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (main)
+        $ ls -l
+        total 10
+        -rw-r--r-- 1 PEDRITO 197121 4948 Jan  5 03:01 apuntes.md
+        drwxr-xr-x 1 PEDRITO 197121    0 Jan  5 00:23 images/
+        -rw-r--r-- 1 PEDRITO 197121  546 Jan  5 00:23 index.html
+        drwxr-xr-x 1 PEDRITO 197121    0 Jan  5 00:23 pages/
+        -rw-r--r-- 1 PEDRITO 197121  254 Jan  5 00:23 readme.md
+        drwxr-xr-x 1 PEDRITO 197121    0 Jan  5 00:23 styles/
+
+
+`ls -lh`: Muestra la mismo informacion que *ls -l* pero con las unidades de tamaño en KB, MB, etc.
+
+        PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (main)
+        $ ls -lh
+        total 10K
+        -rw-r--r-- 1 PEDRITO 197121 5.5K Jan  5 03:03 apuntes.md
+        drwxr-xr-x 1 PEDRITO 197121    0 Jan  5 00:23 images/
+        -rw-r--r-- 1 PEDRITO 197121  546 Jan  5 00:23 index.html
+        drwxr-xr-x 1 PEDRITO 197121    0 Jan  5 00:23 pages/
+        -rw-r--r-- 1 PEDRITO 197121  254 Jan  5 00:23 readme.md
+        drwxr-xr-x 1 PEDRITO 197121    0 Jan  5 00:23 styles/
+
+
+## RAMAS
+
+Comando para craer otra rama:
+
+    git checkout -b development
+
+
+Ejemplo en el Git bush
+
+    PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (main)
+    $ git checkout -b development
+    Switched to a new branch 'development'
+
+    PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (development)
+
+
+Comando que permite conocer cuantas ramas tenemos en el Git:
+
+    git branch
+
+
+ejemplo:
+
+    
+    PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (development)
+    $ git branch
+    * development
+    main
+
+
+El comando --all muestra informacion de todas las ramas, muestra todo el texto.
+
+    git log --oneline --all
+
+
+Ejemplo
+
+    PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (development)
+    $ git log --oneline --all
+    ab1f34a (HEAD -> development) Agregando imagen de noa en index.html, esta es una prueba de que el texto es demasiado grande y que no se muestre
+    d2d4fa7 Agrega informacion en apuntes.md e index.html
+    9873ba1 (origin/master, origin/main, main) Comando adicionales con -gitlog-
+    9e92843 Uso del comando chekout, viajando entre commit
+    73c8283 Actualizar la documentacion
+    57f15fc Se agrega la pagina de equipo
+    52c931c Se agrega un enlace a la pagina Index
+    52282cc Se agrega la página Nuestro equipo a Index
+    c4fe487 Actualiza documentacion y limpiza de estilos
+    f9c96cb Se ordena los archivos en carpetas images y styles
+    6af561f agregué una imagen y lo llamé desde el index.html
+    8b3fe36 Agregamos los requisitos del proyecto
+    92cf08b mi Primer commit, inicia el proyecto
+
+
+El comando --graph muestra los commit de las ramas; los `*` representan los commits
+
+    PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (development)
+    $ git log --oneline --all --graph
+    * ab1f34a (HEAD -> development) Agregando imagen de noa en index.html, esta es una prueba de que el texto es demasiado grande y que no se muestre
+    * d2d4fa7 Agrega informacion en apuntes.md e index.html
+    * 9873ba1 (origin/master, origin/main, main) Comando adicionales con -gitlog-
+    * 9e92843 Uso del comando chekout, viajando entre commit
+    * 73c8283 Actualizar la documentacion
+    * 57f15fc Se agrega la pagina de equipo
+    * 52c931c Se agrega un enlace a la pagina Index
+    * 52282cc Se agrega la página Nuestro equipo a Index
+    * c4fe487 Actualiza documentacion y limpiza de estilos
+    * f9c96cb Se ordena los archivos en carpetas images y styles
+    * 6af561f agregué una imagen y lo llamé desde el index.html
+    * 8b3fe36 Agregamos los requisitos del proyecto
+    * 92cf08b mi Primer commit, inicia el proyecto
+
+
+Nota:  A partir de la version 2.23 de GIT, hay 2 opciones de cambiar de rama
+1) `git checkout main`
+2) `git switch main`
+
+    PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (development)
+    $ git checkout main
+    Switched to branch 'main'
+    Your branch is up to date with 'origin/main'.
+
+    PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (main)
