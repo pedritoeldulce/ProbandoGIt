@@ -246,3 +246,39 @@ Nota:  A partir de la version 2.23 de GIT, hay 2 opciones de cambiar de rama
     Your branch is up to date with 'origin/main'.
 
     PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (main)
+
+
+
+El comando: `git log --oneline --all --graph --decorate`, muestra
+
+    PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (main)
+    $ git log --oneline --all --graph --decorate
+    * 4b634c4 (HEAD -> main) actualiza styles para la clase master
+    * 5750340 Agrega main a la pagina equipo
+    | * 6048af5 (development) Agregando mas info
+    | * 17dd904 Agrengando info a apuntes.md
+    | * ab1f34a Agregando imagen de noa en index.html, esta es una prueba de que el texto es demasiado grande y que no se muestre
+    | * d2d4fa7 Agrega informacion en apuntes.md e index.html
+    |/
+    * 9873ba1 (origin/master, origin/main) Comando adicionales con -gitlog-
+    * 9e92843 Uso del comando chekout, viajando entre commit
+    * 73c8283 Actualizar la documentacion
+    * 57f15fc Se agrega la pagina de equipo
+    * 52c931c Se agrega un enlace a la pagina Index
+    * 52282cc Se agrega la página Nuestro equipo a Index
+    * c4fe487 Actualiza documentacion y limpiza de estilos
+    * f9c96cb Se ordena los archivos en carpetas images y styles
+    * 6af561f agregué una imagen y lo llamé desde el index.html
+    * 8b3fe36 Agregamos los requisitos del proyecto
+    * 92cf08b mi Primer commit, inicia el proyecto
+
+
+Se aprecia las 2 ramas (development y main)
+
+### Merge
+
+El comando `git merge` 
+
+NOTA:
+*  Si los archivos que se modifican no son los mismos en ambas ramas, el `merge` se hace muy simple
+* Si se llegan a modificar el mismo archivo en ambas ramas, habrá conflictos y hay que ayudar la propio git
