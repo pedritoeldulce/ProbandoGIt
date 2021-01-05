@@ -191,3 +191,46 @@ ejemplo:
     $ git branch
     * development
     main
+
+
+El comando --all muestra informacion de todas las ramas, muestra todo el texto.
+
+    git log --oneline --all
+
+
+Ejemplo
+
+    PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (development)
+    $ git log --oneline --all
+    ab1f34a (HEAD -> development) Agregando imagen de noa en index.html, esta es una prueba de que el texto es demasiado grande y que no se muestre
+    d2d4fa7 Agrega informacion en apuntes.md e index.html
+    9873ba1 (origin/master, origin/main, main) Comando adicionales con -gitlog-
+    9e92843 Uso del comando chekout, viajando entre commit
+    73c8283 Actualizar la documentacion
+    57f15fc Se agrega la pagina de equipo
+    52c931c Se agrega un enlace a la pagina Index
+    52282cc Se agrega la página Nuestro equipo a Index
+    c4fe487 Actualiza documentacion y limpiza de estilos
+    f9c96cb Se ordena los archivos en carpetas images y styles
+    6af561f agregué una imagen y lo llamé desde el index.html
+    8b3fe36 Agregamos los requisitos del proyecto
+    92cf08b mi Primer commit, inicia el proyecto
+
+
+El comando --graph muestra los commit de las ramas; los `*` representan los commits
+
+    PEDRITO@PEDRITO-PC MINGW64 ~/PROYECTOS PAOLO/PruebaGit (development)
+    $ git log --oneline --all --graph
+    * ab1f34a (HEAD -> development) Agregando imagen de noa en index.html, esta es una prueba de que el texto es demasiado grande y que no se muestre
+    * d2d4fa7 Agrega informacion en apuntes.md e index.html
+    * 9873ba1 (origin/master, origin/main, main) Comando adicionales con -gitlog-
+    * 9e92843 Uso del comando chekout, viajando entre commit
+    * 73c8283 Actualizar la documentacion
+    * 57f15fc Se agrega la pagina de equipo
+    * 52c931c Se agrega un enlace a la pagina Index
+    * 52282cc Se agrega la página Nuestro equipo a Index
+    * c4fe487 Actualiza documentacion y limpiza de estilos
+    * f9c96cb Se ordena los archivos en carpetas images y styles
+    * 6af561f agregué una imagen y lo llamé desde el index.html
+    * 8b3fe36 Agregamos los requisitos del proyecto
+    * 92cf08b mi Primer commit, inicia el proyecto
